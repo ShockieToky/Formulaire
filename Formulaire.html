@@ -1,0 +1,61 @@
+<!--Document de type html-->
+<!DOCTYPE html>
+<!---Langue-->
+<html lang="fr">
+<!--Début de l'entête-->
+<head>
+    <!--UNICODE-->
+    <meta charset="UTF-8">
+    <!-- Zone de la fenetre dans laquelle le contenu web peut être vu --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titre du formlaire-->
+    <title>Formulaire d'inscription</title>
+    <!--Lien vers le CSS style des feuilles-->
+    <link rel="stylesheet" href="styles.css"> </head> 
+    <!-- Le corps du programme-->
+    <body>
+    <iframe src="son/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="musique"><source src="son/Vel'Koz_Original_Move_4.ogg" type="audio/ogg"></audio>
+    <!--Les classes permettent de manipuler les éléments CSS et JS-->
+    <div class="container">
+        <!--h1 représente le titre principale de la page HTML. De h1 à h6-->
+        <h1 class="gradient-inscription">Inscription</h1>
+        <!-- Représnte le formulaire. id = identifiant/attribut unique de la page html-->
+        <form id="registrationForm">
+            <!--Représente le libellé-->
+            <label for="firstName">Prénom:</label>
+            <!--Controle interactif pour la saisie utilisateur-->
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Nom:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="exemple@exemple.com" required>
+
+            <label for="tel">Telephone:</label>
+            <input type="tel" id="telephone" pattern=[0-9]{10} placeholder="0XXXXXXXXX" required>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" required>
+
+            <label for="confirmPassword">Confirmez le mot de passe:</label>
+            <input type="password" id="confirmPassword" required>
+            <!--Objet bouton-->
+            <button type="submit">S'inscrire</button>
+
+            <table> <!--Création du tablea-->
+                <caption>Merci à</caption> <!--Titre du tableau-->
+                <tr><td>Miatah</td><td>Joue que VelKoz (pas méta)</td></tr> <!--Création de la première ligne avec les colonnes-->
+                <tr><td>Rybard</td><td>Recrutez le il trouve rien</td></tr>
+                <tr><td>Croa</td><td>Grenouille</td></tr>
+                <tr><td>Vivien</td><td>Le GOAT, tout simplement</td></tr>
+                <tr><td>Manu</td><td>Y a les worlds c'est cool</td></tr>
+            </table>
+        </form>
+        <div id="message"></div>
+    </div>
+    <!--Lien vers le fichier JS-->
+    <script src="script.js"></script>
+</body>
+</html>

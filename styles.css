@@ -1,0 +1,72 @@
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; /* police du texte */
+    font-weight: bold; /* gère le gras du texte */
+    /* font-style: oblique; /* permet de mettre le texte en italique de 2 façon différentes */
+    /* text-decoration: underline; /* permet de rajouter une ligne en dessous, sur ou au dessus du texte*/
+    text-align: center; /* permet de choisir l'alignement du texte horizontalement (vertical-align pour la version vertical*/
+    background-image: url("Image/VelKoz.png"); /* permet de rajouter une image dans le background */
+    background-size: cover; /* Permet de resize l'image, cover, repeat ou autre*/
+    background-color: #f4f4f4; /* permet de mettre une couleur à son background */
+    margin: 0;
+    padding: 20px;
+}
+.gradient-inscription{
+    text-align: center;
+    font-size: 70px;
+    background-image: linear-gradient(-45deg, rgb(255,255,255) 80%, rgb(244,123,244) 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    color: rgb(1, 178, 248); /* choix de la couleur du texte */
+
+}
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin: 10px 0 15px;
+    text-align: center;
+    border: 1px solid #eb17bd;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 5px #d30ea2;
+    color: #fb2ab2;
+    background: transparent;  
+}
+::placeholder{
+    color:rgb(255, 255, 255);
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: radial-gradient(circle, rgba(255,117,255,1) 15%, rgba(135,9,175,1) 85%);
+    color: rgb(0, 0, 0);
+    border: 6px double rgb(255, 0, 255);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#oublimdp {
+    color:rgb(0, 0, 0);
+    width: auto;
+    font-size: 10px;
+    background-color: rgb(199, 12, 199);
+}
+
+button:hover {
+    background-color: #2b03e0;
+}
+table, caption, tr, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color: #fb2ab2;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
