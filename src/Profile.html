@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Profil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="Profile">
+    <iframe src="C:/Users/Afpa01/Desktop/Cours/Formulaire/Son/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="musiqueProfile"><source src="C:/Users/Afpa01/Desktop/Cours/Formulaire/Son/Diana_Select.ogg" type="audio/ogg"></audio>
+    <h1 class="Bandeau1">Bonjour Utilisateur</h1>
+    <div class="Bandeau2">
+        <h2 class="Titre2">Informations Utilisateur</h2>
+        <form id="modificationForm">
+            <label class="labelProfile" for="lastName">Nom:</label>
+            <input class="inputProfile" type="text" id="lastName">
+
+            <label class="labelProfile" for="firstName">Prénom:</label>
+            <input class="inputProfile" type="text" id="firstName">
+
+            <label class="labelProfile" for="email">Email:</label>
+            <input class="inputProfile" type="email" id="email">
+
+            <label class="labelProfile" for="oldPassword">Ancien MdP:</label>
+            <input class="inputProfile" type="text" id="oldPassword">
+
+            <label class="labelProfile" for="newPassword">Nouveau MdP:</label>
+            <input class="inputProfile" type="password" id="newPassword">
+
+            <label class="labelProfile" for="newconfPassword">Confirmation nouveau MdP:</label>
+            <input class="inputProfile" type="password" id="newconfPassword">
+
+            <button type="submit" id="buttonProfile">Modifier infos</button>
+            <button type="submit" id="buttonProfile">Enregistrer infos</button>
+        </form>
+    </div>
+    <div class="Bandeau3">
+        <ul>
+            <li><a href="https://fr.wikipedia.org/wiki/Non" target="_blanks">Supprimer le compte</a></li>
+            <li><a href="https://support.microsoft.com/fr-fr" target="_blanks">Contacter le support</a></li>
+            <li><a href="https://www.topito.com/top-shopping-cadeaux-les-plus-chers-gens-riches" target="_blanks">Historique des achats</a></li>
+            <li><a>Historique des modifications</a></li>
+        </ul>
+    </div>
+    <div class="Bandeau4"></div>
+    <div class="Bandeau5">
+        <h2 class="condition">CONDITION D'UTILISATION</h2>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
